@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041C583E228C47770071F2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C583D228C47770071F2B0 /* AppDelegate.swift */; };
+		041C5840228C47770071F2B0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 041C583F228C47770071F2B0 /* GameScene.sks */; };
+		041C5842228C47770071F2B0 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 041C5841228C47770071F2B0 /* Actions.sks */; };
+		041C5844228C47780071F2B0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5843228C47780071F2B0 /* GameScene.swift */; };
+		041C5846228C47780071F2B0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5845228C47780071F2B0 /* GameViewController.swift */; };
+		041C5849228C47780071F2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C5847228C47780071F2B0 /* Main.storyboard */; };
+		041C584B228C47780071F2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C584A228C47780071F2B0 /* Assets.xcassets */; };
+		041C584E228C47780071F2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C584C228C47780071F2B0 /* LaunchScreen.storyboard */; };
+		041C5859228C47780071F2B0 /* Mazic_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5858228C47780071F2B0 /* Mazic_Tests.swift */; };
+		041C5864228C47780071F2B0 /* Mazic_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5863228C47780071F2B0 /* Mazic_UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		041C5855228C47780071F2B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041C5832228C47770071F2B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041C5839228C47770071F2B0;
+			remoteInfo = "Mazic!";
+		};
+		041C5860228C47780071F2B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041C5832228C47770071F2B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041C5839228C47770071F2B0;
+			remoteInfo = "Mazic!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041C583A228C47770071F2B0 /* Mazic!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mazic!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		041C583D228C47770071F2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041C583F228C47770071F2B0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		041C5841228C47770071F2B0 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		041C5843228C47780071F2B0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		041C5845228C47780071F2B0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		041C5848228C47780071F2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041C584A228C47780071F2B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041C584D228C47780071F2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041C584F228C47780071F2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041C5854228C47780071F2B0 /* Mazic!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mazic!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		041C5858228C47780071F2B0 /* Mazic_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazic_Tests.swift; sourceTree = "<group>"; };
+		041C585A228C47780071F2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041C585F228C47780071F2B0 /* Mazic!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mazic!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		041C5863228C47780071F2B0 /* Mazic_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazic_UITests.swift; sourceTree = "<group>"; };
+		041C5865228C47780071F2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041C5837228C47770071F2B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C5851228C47780071F2B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C585C228C47780071F2B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041C5831228C47770071F2B0 = {
+			isa = PBXGroup;
+			children = (
+				041C583C228C47770071F2B0 /* Mazic! */,
+				041C5857228C47780071F2B0 /* Mazic!Tests */,
+				041C5862228C47780071F2B0 /* Mazic!UITests */,
+				041C583B228C47770071F2B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		041C583B228C47770071F2B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041C583A228C47770071F2B0 /* Mazic!.app */,
+				041C5854228C47780071F2B0 /* Mazic!Tests.xctest */,
+				041C585F228C47780071F2B0 /* Mazic!UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041C583C228C47770071F2B0 /* Mazic! */ = {
+			isa = PBXGroup;
+			children = (
+				041C583D228C47770071F2B0 /* AppDelegate.swift */,
+				041C583F228C47770071F2B0 /* GameScene.sks */,
+				041C5841228C47770071F2B0 /* Actions.sks */,
+				041C5843228C47780071F2B0 /* GameScene.swift */,
+				041C5845228C47780071F2B0 /* GameViewController.swift */,
+				041C5847228C47780071F2B0 /* Main.storyboard */,
+				041C584A228C47780071F2B0 /* Assets.xcassets */,
+				041C584C228C47780071F2B0 /* LaunchScreen.storyboard */,
+				041C584F228C47780071F2B0 /* Info.plist */,
+			);
+			path = "Mazic!";
+			sourceTree = "<group>";
+		};
+		041C5857228C47780071F2B0 /* Mazic!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				041C5858228C47780071F2B0 /* Mazic_Tests.swift */,
+				041C585A228C47780071F2B0 /* Info.plist */,
+			);
+			path = "Mazic!Tests";
+			sourceTree = "<group>";
+		};
+		041C5862228C47780071F2B0 /* Mazic!UITests */ = {
+			isa = PBXGroup;
+			children = (
+				041C5863228C47780071F2B0 /* Mazic_UITests.swift */,
+				041C5865228C47780071F2B0 /* Info.plist */,
+			);
+			path = "Mazic!UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041C5839228C47770071F2B0 /* Mazic! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041C5868228C47780071F2B0 /* Build configuration list for PBXNativeTarget "Mazic!" */;
+			buildPhases = (
+				041C5836228C47770071F2B0 /* Sources */,
+				041C5837228C47770071F2B0 /* Frameworks */,
+				041C5838228C47770071F2B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mazic!";
+			productName = "Mazic!";
+			productReference = 041C583A228C47770071F2B0 /* Mazic!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		041C5853228C47780071F2B0 /* Mazic!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041C586B228C47780071F2B0 /* Build configuration list for PBXNativeTarget "Mazic!Tests" */;
+			buildPhases = (
+				041C5850228C47780071F2B0 /* Sources */,
+				041C5851228C47780071F2B0 /* Frameworks */,
+				041C5852228C47780071F2B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041C5856228C47780071F2B0 /* PBXTargetDependency */,
+			);
+			name = "Mazic!Tests";
+			productName = "Mazic!Tests";
+			productReference = 041C5854228C47780071F2B0 /* Mazic!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		041C585E228C47780071F2B0 /* Mazic!UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041C586E228C47780071F2B0 /* Build configuration list for PBXNativeTarget "Mazic!UITests" */;
+			buildPhases = (
+				041C585B228C47780071F2B0 /* Sources */,
+				041C585C228C47780071F2B0 /* Frameworks */,
+				041C585D228C47780071F2B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041C5861228C47780071F2B0 /* PBXTargetDependency */,
+			);
+			name = "Mazic!UITests";
+			productName = "Mazic!UITests";
+			productReference = 041C585F228C47780071F2B0 /* Mazic!UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041C5832228C47770071F2B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = nandamochammad;
+				TargetAttributes = {
+					041C5839228C47770071F2B0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					041C5853228C47780071F2B0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 041C5839228C47770071F2B0;
+					};
+					041C585E228C47780071F2B0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 041C5839228C47770071F2B0;
+					};
+				};
+			};
+			buildConfigurationList = 041C5835228C47770071F2B0 /* Build configuration list for PBXProject "Mazic!" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041C5831228C47770071F2B0;
+			productRefGroup = 041C583B228C47770071F2B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041C5839228C47770071F2B0 /* Mazic! */,
+				041C5853228C47780071F2B0 /* Mazic!Tests */,
+				041C585E228C47780071F2B0 /* Mazic!UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041C5838228C47770071F2B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041C5849228C47780071F2B0 /* Main.storyboard in Resources */,
+				041C5840228C47770071F2B0 /* GameScene.sks in Resources */,
+				041C584B228C47780071F2B0 /* Assets.xcassets in Resources */,
+				041C584E228C47780071F2B0 /* LaunchScreen.storyboard in Resources */,
+				041C5842228C47770071F2B0 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C5852228C47780071F2B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C585D228C47780071F2B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041C5836228C47770071F2B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041C5844228C47780071F2B0 /* GameScene.swift in Sources */,
+				041C5846228C47780071F2B0 /* GameViewController.swift in Sources */,
+				041C583E228C47770071F2B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C5850228C47780071F2B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041C5859228C47780071F2B0 /* Mazic_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041C585B228C47780071F2B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041C5864228C47780071F2B0 /* Mazic_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		041C5856228C47780071F2B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041C5839228C47770071F2B0 /* Mazic! */;
+			targetProxy = 041C5855228C47780071F2B0 /* PBXContainerItemProxy */;
+		};
+		041C5861228C47780071F2B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041C5839228C47770071F2B0 /* Mazic! */;
+			targetProxy = 041C5860228C47780071F2B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		041C5847228C47780071F2B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041C5848228C47780071F2B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041C584C228C47780071F2B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041C584D228C47780071F2B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041C5866228C47780071F2B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		041C5867228C47780071F2B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041C5869228C47780071F2B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = "Mazic!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nandamochammad.Mazic-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041C586A228C47780071F2B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = "Mazic!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nandamochammad.Mazic-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		041C586C228C47780071F2B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = "Mazic!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nandamochammad.Mazic-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mazic!.app/Mazic!";
+			};
+			name = Debug;
+		};
+		041C586D228C47780071F2B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = "Mazic!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nandamochammad.Mazic-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mazic!.app/Mazic!";
+			};
+			name = Release;
+		};
+		041C586F228C47780071F2B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = "Mazic!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nandamochammad.Mazic-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mazic!";
+			};
+			name = Debug;
+		};
+		041C5870228C47780071F2B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = "Mazic!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nandamochammad.Mazic-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mazic!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041C5835228C47770071F2B0 /* Build configuration list for PBXProject "Mazic!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041C5866228C47780071F2B0 /* Debug */,
+				041C5867228C47780071F2B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041C5868228C47780071F2B0 /* Build configuration list for PBXNativeTarget "Mazic!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041C5869228C47780071F2B0 /* Debug */,
+				041C586A228C47780071F2B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041C586B228C47780071F2B0 /* Build configuration list for PBXNativeTarget "Mazic!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041C586C228C47780071F2B0 /* Debug */,
+				041C586D228C47780071F2B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041C586E228C47780071F2B0 /* Build configuration list for PBXNativeTarget "Mazic!UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041C586F228C47780071F2B0 /* Debug */,
+				041C5870228C47780071F2B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041C5832228C47770071F2B0 /* Project object */;
+}
