@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04014919228FEB72005AA464 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04014918228FEB72005AA464 /* HomeViewController.swift */; };
+		0401491B228FEB7B005AA464 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401491A228FEB7B005AA464 /* LeaderBoardViewController.swift */; };
 		041C583E228C47770071F2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C583D228C47770071F2B0 /* AppDelegate.swift */; };
 		041C5840228C47770071F2B0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 041C583F228C47770071F2B0 /* GameScene.sks */; };
 		041C5842228C47770071F2B0 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 041C5841228C47770071F2B0 /* Actions.sks */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04014918228FEB72005AA464 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0401491A228FEB7B005AA464 /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		041C583A228C47770071F2B0 /* Mazic!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mazic!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041C583D228C47770071F2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041C583F228C47770071F2B0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				041C584A228C47780071F2B0 /* Assets.xcassets */,
 				041C584C228C47780071F2B0 /* LaunchScreen.storyboard */,
 				041C584F228C47780071F2B0 /* Info.plist */,
+				04014918228FEB72005AA464 /* HomeViewController.swift */,
+				0401491A228FEB7B005AA464 /* LeaderBoardViewController.swift */,
 			);
 			path = "Mazic!";
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 				041C5844228C47780071F2B0 /* GameScene.swift in Sources */,
 				041C5846228C47780071F2B0 /* GameViewController.swift in Sources */,
 				041C583E228C47770071F2B0 /* AppDelegate.swift in Sources */,
+				04014919228FEB72005AA464 /* HomeViewController.swift in Sources */,
+				0401491B228FEB7B005AA464 /* LeaderBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
