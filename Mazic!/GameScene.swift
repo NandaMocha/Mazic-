@@ -18,7 +18,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var locX : CGFloat?
     var locY : CGFloat?
-//    var playerX :
+
+    var overlayView = UIView()
+    var path = CGMutablePath()
+    var maskLayer = CAShapeLayer()
+    
+    var maskDone = false
+
+    
+
+
     
     override func didMove(to view: SKView) {
         
@@ -35,10 +44,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.locY = CGFloat((data?.acceleration.y)!) * 10
             self.physicsWorld.gravity = CGVector(dx: self.locX!, dy: self.locY!)
 //            print("Player Location ", self.player.centerRect.maxX, self.player.centerRect.maxY)
+            self.addOverlay()
 
         }
         
-        self.addOverlay()
 
         
         
@@ -48,20 +57,53 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let bodyA = contact.bodyA
         let bodyB = contact.bodyB
         
-        if bodyA.categoryBitMask == 1 && bodyB.categoryBitMask == 2 || bodyA.categoryBitMask == 2 && bodyB.categoryBitMask == 1{
+        if bodyA.node?.name == "player" && bodyB.node?.name == "Goals"{
             print("Goals")
+            let shockwave = SKShapeNode(circleOfRadius: 1)
             
+            shockwave.position = contact.contactPoint
+            scene?.addChild(shockwave)
+            
+            shockwave.run(shockWaveAction)
         }
     }
+    
+    let shockWaveAction: SKAction = {
+        let growAndFadeAction = SKAction.group([SKAction.scale(to: 50, duration: 0.5),
+                                                SKAction.fadeOut(withDuration: 0.5)])
+        
+        let sequence = SKAction.sequence([growAndFadeAction,
+                                          SKAction.removeFromParent()])
+        
+        return sequence
+    }()
     
     func addOverlay() {
         let randA = CGFloat.random(in: 0 ... 350)
         let randB = CGFloat.random(in: 0 ... 800)
-        let overlay = createOverlay(frame: view!.frame,
-                                    xOffset: randA,
-                                    yOffset: randB,
-                                    radius: 50.0)
-        view!.addSubview(overlay)
+        
+        if maskDone == false{
+            let overlay = createOverlay(frame: view!.frame,
+                                        xOffset: player.frame.origin.x,
+                                        yOffset: player.frame.origin.y,
+                                        radius: 50.0)
+            view!.addSubview(overlay)
+            maskDone = true
+            print(maskDone)
+        }else{
+            overlayView.removeFromSuperview()
+            maskLayer.removeFromSuperlayer()
+            path.closeSubpath()
+            
+            let overlay = createOverlay(frame: view!.frame,
+                                        xOffset: player.frame.origin.x,
+                                        yOffset: player.frame.origin.y,
+                                        radius: 50.0)
+            view!.addSubview(overlay)
+            maskDone = false
+            print(maskDone)
+
+        }
     }
     
     func createOverlay(frame: CGRect,
@@ -71,10 +113,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         print(xOffset, yOffset)
         print(frame)
         // Step 1
-        let overlayView = UIView(frame: frame)
+        overlayView = UIView(frame: frame)
         overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         // Step 2
-        let path = CGMutablePath()
         path.addArc(center: CGPoint(x: xOffset, y: yOffset),
                     radius: radius,
                     startAngle: 0.0,
@@ -82,7 +123,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     clockwise: false)
         path.addRect(CGRect(origin: .zero, size: overlayView.frame.size))
         // Step 3
-        let maskLayer = CAShapeLayer()
         maskLayer.backgroundColor = UIColor.black.withAlphaComponent(0.2).cgColor
         maskLayer.path = path
         // For Swift 4.2
@@ -90,6 +130,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Step 4
         overlayView.layer.mask = maskLayer
         overlayView.clipsToBounds = true
+        
         
         return overlayView
     }
