@@ -24,6 +24,7 @@
 		04713B6322903E35009BDEC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6222903E35009BDEC3 /* ProfileViewController.swift */; };
 		04713B6522904D9D009BDEC3 /* MathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6422904D9D009BDEC3 /* MathViewController.swift */; };
 		04713B6722904F6D009BDEC3 /* CustomClassSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6622904F6D009BDEC3 /* CustomClassSetting.swift */; };
+		04713B6A22905B2D009BDEC3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6922905B2D009BDEC3 /* DataManager.swift */; };
 		BCE2E3BFD87E9151340148F4 /* Pods_Mazic_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875B232A13A87301ADE7A384 /* Pods_Mazic_.framework */; };
 		D3296433F55329BB937A3FE9 /* Pods_Mazic_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82448CDE93748BE5424D92A /* Pods_Mazic_Tests.framework */; };
 		D636123BB9BFBBA99ECCB094 /* Pods_Mazic_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1F7CB969AACDF9D1F9B56F /* Pods_Mazic_UITests.framework */; };
@@ -71,6 +72,7 @@
 		04713B6222903E35009BDEC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04713B6422904D9D009BDEC3 /* MathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathViewController.swift; sourceTree = "<group>"; };
 		04713B6622904F6D009BDEC3 /* CustomClassSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClassSetting.swift; sourceTree = "<group>"; };
+		04713B6922905B2D009BDEC3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		19B477E723D6DA89DCAF822F /* Pods-Mazic!Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!Tests.release.xcconfig"; path = "Target Support Files/Pods-Mazic!Tests/Pods-Mazic!Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1A1F7CB969AACDF9D1F9B56F /* Pods_Mazic_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mazic_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD7A530BB03A289A5BCF6B8 /* Pods-Mazic!UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!UITests.debug.xcconfig"; path = "Target Support Files/Pods-Mazic!UITests/Pods-Mazic!UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				04713B6622904F6D009BDEC3 /* CustomClassSetting.swift */,
+				04713B6922905B2D009BDEC3 /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04713B6122903E27009BDEC3 /* LoginViewController.swift in Sources */,
+				04713B6A22905B2D009BDEC3 /* DataManager.swift in Sources */,
 				041C5844228C47780071F2B0 /* GameScene.swift in Sources */,
 				041C5846228C47780071F2B0 /* GameViewController.swift in Sources */,
 				041C583E228C47770071F2B0 /* AppDelegate.swift in Sources */,

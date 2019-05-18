@@ -15,9 +15,12 @@ class HomeViewController: CustomClassSetting {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        DataManager.shared.loadFromUserDefaults()
         
 
     }
+    @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -33,6 +36,7 @@ class HomeViewController: CustomClassSetting {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
+    
     @IBAction func playMaze(_ sender: Any) {
         performSegue(withIdentifier: "letsPlay", sender: self)
     }
@@ -42,7 +46,11 @@ class HomeViewController: CustomClassSetting {
     }
     
     @IBAction func profileButton(_ sender: Any) {
-        performSegue(withIdentifier: "profile", sender: self)
+        if DataManager.shared.initialized == true{
+            performSegue(withIdentifier: "keProfileLangsung", sender: self)
+        }else{
+            performSegue(withIdentifier: "loginDulu", sender: self)
+        }
     }
     
 }

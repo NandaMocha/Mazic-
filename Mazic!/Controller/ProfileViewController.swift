@@ -9,22 +9,35 @@
 import UIKit
 
 class ProfileViewController: CustomClassSetting {
-
+    
+    @IBOutlet weak var greet: UILabel!
+    @IBOutlet weak var totalScore: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let name = DataManager.shared.userName
+        let highScore = String(DataManager.shared.userHighScore)
+        greet.text = "\(name)"
+        totalScore.text = "Your High Score is : \(highScore)"
 
-        // Do any additional setup after loading the view.
+        //Back Destination to Root NC Clas
+
     }
     
+    @objc func popToRoot(sender : UIViewController){
+        _ = self.navigationController?.popToRootViewController(animated: true)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
+    @IBAction func logOutButton(_ sender: Any) {
+        let alert = UIAlertController(title: "Peringatan", message: "Apakah anda yakin untuk Keluar?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Tidak", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Keluar", style: .destructive, handler: { (done) in
+            DataManager.shared.initialized = false
+            DataManager.shared.saveToUserDefaults()
+            self.performSegue(withIdentifier: "unwindToHome", sender: self)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
