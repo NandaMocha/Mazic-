@@ -72,9 +72,8 @@ class LoginViewController: CustomClassSetting, UITextFieldDelegate {
                 self.count += 1
             } else{
                 self.count = 0
+                textField.layer.borderColor = UIColor.white.cgColor
             }
-            textField.layer.borderColor = UIColor.white.cgColor
-            
         }
     }
     
@@ -84,15 +83,10 @@ class LoginViewController: CustomClassSetting, UITextFieldDelegate {
             let alert = UIAlertController(title: "Peringatan", message: "Mohon Lengkapi Data", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            if emailTF.text == ""{
-                animateWhenNil(textField: emailTF)
-            }
-            if usernameTF.text == ""{
-                animateWhenNil(textField: usernameTF)
-            }
-            if passwordTF.text == ""{
-                animateWhenNil(textField: passwordTF)
-            }
+            animateWhenNil(textField: usernameTF)
+            animateWhenNil(textField: emailTF)
+            animateWhenNil(textField: passwordTF)
+            
         }else{
             DataManager.shared.email = emailTF.text!
             DataManager.shared.password = passwordTF.text!
