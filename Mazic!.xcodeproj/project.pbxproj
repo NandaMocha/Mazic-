@@ -19,6 +19,11 @@
 		041C584E228C47780071F2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C584C228C47780071F2B0 /* LaunchScreen.storyboard */; };
 		041C5859228C47780071F2B0 /* Mazic_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5858228C47780071F2B0 /* Mazic_Tests.swift */; };
 		041C5864228C47780071F2B0 /* Mazic_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5863228C47780071F2B0 /* Mazic_UITests.swift */; };
+		04713B5F22903B0D009BDEC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04713B5E22903B0D009BDEC3 /* GoogleService-Info.plist */; };
+		04713B6122903E27009BDEC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6022903E27009BDEC3 /* LoginViewController.swift */; };
+		04713B6322903E35009BDEC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6222903E35009BDEC3 /* ProfileViewController.swift */; };
+		04713B6522904D9D009BDEC3 /* MathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6422904D9D009BDEC3 /* MathViewController.swift */; };
+		04713B6722904F6D009BDEC3 /* CustomClassSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6622904F6D009BDEC3 /* CustomClassSetting.swift */; };
 		BCE2E3BFD87E9151340148F4 /* Pods_Mazic_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875B232A13A87301ADE7A384 /* Pods_Mazic_.framework */; };
 		D3296433F55329BB937A3FE9 /* Pods_Mazic_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82448CDE93748BE5424D92A /* Pods_Mazic_Tests.framework */; };
 		D636123BB9BFBBA99ECCB094 /* Pods_Mazic_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1F7CB969AACDF9D1F9B56F /* Pods_Mazic_UITests.framework */; };
@@ -61,6 +66,11 @@
 		041C585F228C47780071F2B0 /* Mazic!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mazic!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041C5863228C47780071F2B0 /* Mazic_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazic_UITests.swift; sourceTree = "<group>"; };
 		041C5865228C47780071F2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04713B5E22903B0D009BDEC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04713B6022903E27009BDEC3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04713B6222903E35009BDEC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		04713B6422904D9D009BDEC3 /* MathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathViewController.swift; sourceTree = "<group>"; };
+		04713B6622904F6D009BDEC3 /* CustomClassSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClassSetting.swift; sourceTree = "<group>"; };
 		19B477E723D6DA89DCAF822F /* Pods-Mazic!Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!Tests.release.xcconfig"; path = "Target Support Files/Pods-Mazic!Tests/Pods-Mazic!Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1A1F7CB969AACDF9D1F9B56F /* Pods_Mazic_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mazic_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD7A530BB03A289A5BCF6B8 /* Pods-Mazic!UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!UITests.debug.xcconfig"; path = "Target Support Files/Pods-Mazic!UITests/Pods-Mazic!UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +115,9 @@
 				04014918228FEB72005AA464 /* HomeViewController.swift */,
 				041C5845228C47780071F2B0 /* GameViewController.swift */,
 				0401491A228FEB7B005AA464 /* LeaderBoardViewController.swift */,
+				04713B6022903E27009BDEC3 /* LoginViewController.swift */,
+				04713B6222903E35009BDEC3 /* ProfileViewController.swift */,
+				04713B6422904D9D009BDEC3 /* MathViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +128,7 @@
 				041C584C228C47780071F2B0 /* LaunchScreen.storyboard */,
 				041C5847228C47780071F2B0 /* Main.storyboard */,
 				041C584A228C47780071F2B0 /* Assets.xcassets */,
+				04713B5E22903B0D009BDEC3 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,6 +171,7 @@
 				041C584F228C47780071F2B0 /* Info.plist */,
 				041C583D228C47770071F2B0 /* AppDelegate.swift */,
 				0401491E228FF349005AA464 /* Game Scene */,
+				04713B6822904F72009BDEC3 /* Model */,
 				0401491C228FF31B005AA464 /* Controller */,
 				0401491D228FF335005AA464 /* Supporting Files */,
 			);
@@ -179,6 +194,14 @@
 				041C5865228C47780071F2B0 /* Info.plist */,
 			);
 			path = "Mazic!UITests";
+			sourceTree = "<group>";
+		};
+		04713B6822904F72009BDEC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04713B6622904F6D009BDEC3 /* CustomClassSetting.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B8A09E374DFE09EF0A5023DF /* Frameworks */ = {
@@ -317,6 +340,7 @@
 				041C584B228C47780071F2B0 /* Assets.xcassets in Resources */,
 				041C584E228C47780071F2B0 /* LaunchScreen.storyboard in Resources */,
 				041C5842228C47770071F2B0 /* Actions.sks in Resources */,
+				04713B5F22903B0D009BDEC3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +451,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04713B6122903E27009BDEC3 /* LoginViewController.swift in Sources */,
 				041C5844228C47780071F2B0 /* GameScene.swift in Sources */,
 				041C5846228C47780071F2B0 /* GameViewController.swift in Sources */,
 				041C583E228C47770071F2B0 /* AppDelegate.swift in Sources */,
+				04713B6722904F6D009BDEC3 /* CustomClassSetting.swift in Sources */,
+				04713B6522904D9D009BDEC3 /* MathViewController.swift in Sources */,
+				04713B6322903E35009BDEC3 /* ProfileViewController.swift in Sources */,
 				04014919228FEB72005AA464 /* HomeViewController.swift in Sources */,
 				0401491B228FEB7B005AA464 /* LeaderBoardViewController.swift in Sources */,
 			);

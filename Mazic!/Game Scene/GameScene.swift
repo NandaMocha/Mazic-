@@ -44,7 +44,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.locY = CGFloat((data?.acceleration.y)!) * 10
             self.physicsWorld.gravity = CGVector(dx: self.locX!, dy: self.locY!)
 //            print("Player Location ", self.player.centerRect.maxX, self.player.centerRect.maxY)
-            self.addOverlay()
+//            self.addOverlay()
 
         }
         
