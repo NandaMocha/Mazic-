@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  LeaderBoardViewController.swift
 //  Mazic!
 //
 //  Created by Nanda Mochammad on 18/05/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UITabBarController {
+class LeaderBoardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

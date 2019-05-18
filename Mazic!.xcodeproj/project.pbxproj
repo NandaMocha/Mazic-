@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		041C584E228C47780071F2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C584C228C47780071F2B0 /* LaunchScreen.storyboard */; };
 		041C5859228C47780071F2B0 /* Mazic_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5858228C47780071F2B0 /* Mazic_Tests.swift */; };
 		041C5864228C47780071F2B0 /* Mazic_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5863228C47780071F2B0 /* Mazic_UITests.swift */; };
+		BCE2E3BFD87E9151340148F4 /* Pods_Mazic_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875B232A13A87301ADE7A384 /* Pods_Mazic_.framework */; };
+		D3296433F55329BB937A3FE9 /* Pods_Mazic_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82448CDE93748BE5424D92A /* Pods_Mazic_Tests.framework */; };
+		D636123BB9BFBBA99ECCB094 /* Pods_Mazic_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1F7CB969AACDF9D1F9B56F /* Pods_Mazic_UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A8322238CE6854C1A0FB73 /* Pods-Mazic!UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!UITests.release.xcconfig"; path = "Target Support Files/Pods-Mazic!UITests/Pods-Mazic!UITests.release.xcconfig"; sourceTree = "<group>"; };
 		04014918228FEB72005AA464 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0401491A228FEB7B005AA464 /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		041C583A228C47770071F2B0 /* Mazic!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mazic!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +61,14 @@
 		041C585F228C47780071F2B0 /* Mazic!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mazic!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041C5863228C47780071F2B0 /* Mazic_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mazic_UITests.swift; sourceTree = "<group>"; };
 		041C5865228C47780071F2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B477E723D6DA89DCAF822F /* Pods-Mazic!Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!Tests.release.xcconfig"; path = "Target Support Files/Pods-Mazic!Tests/Pods-Mazic!Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1A1F7CB969AACDF9D1F9B56F /* Pods_Mazic_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mazic_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD7A530BB03A289A5BCF6B8 /* Pods-Mazic!UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!UITests.debug.xcconfig"; path = "Target Support Files/Pods-Mazic!UITests/Pods-Mazic!UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7955759E6C257275B47D061C /* Pods-Mazic!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!.debug.xcconfig"; path = "Target Support Files/Pods-Mazic!/Pods-Mazic!.debug.xcconfig"; sourceTree = "<group>"; };
+		875B232A13A87301ADE7A384 /* Pods_Mazic_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mazic_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD85BA8E3B5AB3FF4D50A67F /* Pods-Mazic!Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!Tests.debug.xcconfig"; path = "Target Support Files/Pods-Mazic!Tests/Pods-Mazic!Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B82448CDE93748BE5424D92A /* Pods_Mazic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mazic_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE00B983E29F0C5B3F0439B2 /* Pods-Mazic!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!.release.xcconfig"; path = "Target Support Files/Pods-Mazic!/Pods-Mazic!.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE2E3BFD87E9151340148F4 /* Pods_Mazic_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3296433F55329BB937A3FE9 /* Pods_Mazic_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D636123BB9BFBBA99ECCB094 /* Pods_Mazic_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0401491C228FF31B005AA464 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04014918228FEB72005AA464 /* HomeViewController.swift */,
+				041C5845228C47780071F2B0 /* GameViewController.swift */,
+				0401491A228FEB7B005AA464 /* LeaderBoardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0401491D228FF335005AA464 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				041C584C228C47780071F2B0 /* LaunchScreen.storyboard */,
+				041C5847228C47780071F2B0 /* Main.storyboard */,
+				041C584A228C47780071F2B0 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0401491E228FF349005AA464 /* Game Scene */ = {
+			isa = PBXGroup;
+			children = (
+				041C583F228C47770071F2B0 /* GameScene.sks */,
+				041C5841228C47770071F2B0 /* Actions.sks */,
+				041C5843228C47780071F2B0 /* GameScene.swift */,
+			);
+			path = "Game Scene";
+			sourceTree = "<group>";
+		};
 		041C5831228C47770071F2B0 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +136,8 @@
 				041C5857228C47780071F2B0 /* Mazic!Tests */,
 				041C5862228C47780071F2B0 /* Mazic!UITests */,
 				041C583B228C47770071F2B0 /* Products */,
+				F87E31CCE92042B171CDDCEE /* Pods */,
+				B8A09E374DFE09EF0A5023DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,17 +154,11 @@
 		041C583C228C47770071F2B0 /* Mazic! */ = {
 			isa = PBXGroup;
 			children = (
-				041C583D228C47770071F2B0 /* AppDelegate.swift */,
-				041C583F228C47770071F2B0 /* GameScene.sks */,
-				041C5841228C47770071F2B0 /* Actions.sks */,
-				041C5843228C47780071F2B0 /* GameScene.swift */,
-				041C5845228C47780071F2B0 /* GameViewController.swift */,
-				041C5847228C47780071F2B0 /* Main.storyboard */,
-				041C584A228C47780071F2B0 /* Assets.xcassets */,
-				041C584C228C47780071F2B0 /* LaunchScreen.storyboard */,
 				041C584F228C47780071F2B0 /* Info.plist */,
-				04014918228FEB72005AA464 /* HomeViewController.swift */,
-				0401491A228FEB7B005AA464 /* LeaderBoardViewController.swift */,
+				041C583D228C47770071F2B0 /* AppDelegate.swift */,
+				0401491E228FF349005AA464 /* Game Scene */,
+				0401491C228FF31B005AA464 /* Controller */,
+				0401491D228FF335005AA464 /* Supporting Files */,
 			);
 			path = "Mazic!";
 			sourceTree = "<group>";
@@ -140,6 +181,29 @@
 			path = "Mazic!UITests";
 			sourceTree = "<group>";
 		};
+		B8A09E374DFE09EF0A5023DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				875B232A13A87301ADE7A384 /* Pods_Mazic_.framework */,
+				B82448CDE93748BE5424D92A /* Pods_Mazic_Tests.framework */,
+				1A1F7CB969AACDF9D1F9B56F /* Pods_Mazic_UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F87E31CCE92042B171CDDCEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7955759E6C257275B47D061C /* Pods-Mazic!.debug.xcconfig */,
+				DE00B983E29F0C5B3F0439B2 /* Pods-Mazic!.release.xcconfig */,
+				AD85BA8E3B5AB3FF4D50A67F /* Pods-Mazic!Tests.debug.xcconfig */,
+				19B477E723D6DA89DCAF822F /* Pods-Mazic!Tests.release.xcconfig */,
+				1CD7A530BB03A289A5BCF6B8 /* Pods-Mazic!UITests.debug.xcconfig */,
+				00A8322238CE6854C1A0FB73 /* Pods-Mazic!UITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041C5868228C47780071F2B0 /* Build configuration list for PBXNativeTarget "Mazic!" */;
 			buildPhases = (
+				F7C38D6BE51B40D5DDC1FC76 /* [CP] Check Pods Manifest.lock */,
 				041C5836228C47770071F2B0 /* Sources */,
 				041C5837228C47770071F2B0 /* Frameworks */,
 				041C5838228C47770071F2B0 /* Resources */,
+				8AF8742E0EA5267FAC787810 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041C586B228C47780071F2B0 /* Build configuration list for PBXNativeTarget "Mazic!Tests" */;
 			buildPhases = (
+				EF9EA18CBB1A201F27F8F5F9 /* [CP] Check Pods Manifest.lock */,
 				041C5850228C47780071F2B0 /* Sources */,
 				041C5851228C47780071F2B0 /* Frameworks */,
 				041C5852228C47780071F2B0 /* Resources */,
@@ -182,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041C586E228C47780071F2B0 /* Build configuration list for PBXNativeTarget "Mazic!UITests" */;
 			buildPhases = (
+				3FB297AF9471FE816C000DF7 /* [CP] Check Pods Manifest.lock */,
 				041C585B228C47780071F2B0 /* Sources */,
 				041C585C228C47780071F2B0 /* Frameworks */,
 				041C585D228C47780071F2B0 /* Resources */,
@@ -267,6 +335,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FB297AF9471FE816C000DF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mazic!UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AF8742E0EA5267FAC787810 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mazic!/Pods-Mazic!-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mazic!/Pods-Mazic!-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mazic!/Pods-Mazic!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9EA18CBB1A201F27F8F5F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mazic!Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C38D6BE51B40D5DDC1FC76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mazic!-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		041C5836228C47770071F2B0 /* Sources */ = {
@@ -450,6 +604,7 @@
 		};
 		041C5869228C47780071F2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7955759E6C257275B47D061C /* Pods-Mazic!.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -469,6 +624,7 @@
 		};
 		041C586A228C47780071F2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE00B983E29F0C5B3F0439B2 /* Pods-Mazic!.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +644,7 @@
 		};
 		041C586C228C47780071F2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD85BA8E3B5AB3FF4D50A67F /* Pods-Mazic!Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +666,7 @@
 		};
 		041C586D228C47780071F2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B477E723D6DA89DCAF822F /* Pods-Mazic!Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +688,7 @@
 		};
 		041C586F228C47780071F2B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD7A530BB03A289A5BCF6B8 /* Pods-Mazic!UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +709,7 @@
 		};
 		041C5870228C47780071F2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A8322238CE6854C1A0FB73 /* Pods-Mazic!UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
