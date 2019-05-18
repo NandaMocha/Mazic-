@@ -21,6 +21,7 @@ class DataManager{
     var userHighScore : Int = 0
     var allUserPoint : [String] = []
     var authResults : String = ""
+    var userHistory : [[String]] = [["qOne", "0"], ["qTwo", "0"], ["qThree", "0"], ["qFour", "0"], ["qFive","0"], ["qSix", "0"], ["qSeven", "0"], ["qEight", "0"], ["qNine", "0"], ["qTen", "0"]]
     
     private init(){}
     

@@ -281,6 +281,7 @@
                     <connections>
                         <outlet property="answerTF" destination="zeG-DV-rLd" id="iTJ-Ew-aDj"/>
                         <outlet property="checkButton" destination="hd7-Qe-IRp" id="fMy-6g-xew"/>
+                        <outlet property="questionView" destination="y4v-fT-QPz" id="GGd-R3-UtG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eu-O3-Tv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
