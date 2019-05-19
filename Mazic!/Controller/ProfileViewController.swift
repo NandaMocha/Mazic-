@@ -18,14 +18,8 @@ class ProfileViewController: CustomClassSetting {
         let name = DataManager.shared.userName
         let highScore = String(DataManager.shared.userHighScore)
         greet.text = "\(name)"
-        totalScore.text = "Your High Score is : \(highScore)"
+        totalScore.text = "High Score : \(highScore)"
 
-        //Back Destination to Root NC Clas
-
-    }
-    
-    @objc func popToRoot(sender : UIViewController){
-        _ = self.navigationController?.popToRootViewController(animated: true)
 
     }
 

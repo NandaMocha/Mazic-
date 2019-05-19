@@ -78,7 +78,7 @@ class LoginViewController: CustomClassSetting, UITextFieldDelegate {
     }
     
     @IBAction func loginTapped(_ sender: Any) {
-        
+        //Cek Kondisi apakah ada field yang kosong
         if emailTF.text == "" || passwordTF.text == "" || usernameTF.text == ""{
             let alert = UIAlertController(title: "Peringatan", message: "Mohon Lengkapi Data", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
@@ -88,31 +88,35 @@ class LoginViewController: CustomClassSetting, UITextFieldDelegate {
             animateWhenNil(textField: passwordTF)
             
         }else{
+            //Jika tidak ada field yang kosong maka akan menyimpan nilai email n apssword
             DataManager.shared.email = emailTF.text!
             DataManager.shared.password = passwordTF.text!
             
+            //Jika register sukses lansgung menjalankan fingsi login
             if DataManager.shared.userBeginRegister() == false{
                 
                 if DataManager.shared.userBeginLogin() == false{
                     
+                    //Menyimpan nilai init dan username
                     DataManager.shared.initialized = true
                     DataManager.shared.userName = usernameTF.text!
                     
+                    //Menyimpan data k User Defaults
                     DataManager.shared.saveToUserDefaults()
-                    
-                    performSegue(withIdentifier: "keProfil", sender: self)
                 }
-            
+            //Jika gagal register berarti kemungkinan email sudah terdaftar, dan akan diarahkan langsung ke Login
             }else{
                 if DataManager.shared.userBeginLogin() == false{
+                    //menyimpan nilai init dan username
                     DataManager.shared.initialized = true
                     DataManager.shared.userName = usernameTF.text!
                     
+                    //Menyimpan data k User Defaults
                     DataManager.shared.saveToUserDefaults()
                     
-                    performSegue(withIdentifier: "keProfil", sender: self)
+                //Jika gagal login kemungkinan password salah
                 }else{
-                    let alert = UIAlertController(title: "Peringatan", message: "Login Gagal", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Peringatan", message: "Login gagal, periksa password anda", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
