@@ -21,6 +21,9 @@ class DataManager{
     var userHighScore : Int = 0
     var authResults : String = ""
     var userHistory : [[String]] = [["qOne", "0"], ["qTwo", "0"], ["qThree", "0"], ["qFour", "0"], ["qFive","0"], ["qSix", "0"], ["qSeven", "0"], ["qEight", "0"], ["qNine", "0"], ["qTen", "0"]]
+    var arrayOfPlayer = [String]()
+    var arrayOfScore = [String]()
+    
     
     private init(){}
     
@@ -79,6 +82,20 @@ class DataManager{
         return errors
     }
     
+    func userBeginLogout(){
+        initialized = false
+        userName = ""
+        email = ""
+        password = ""
+        userHighScore = 0
+        authResults = ""
+        userHistory = [["qOne", "0"], ["qTwo", "0"], ["qThree", "0"], ["qFour", "0"], ["qFive","0"], ["qSix", "0"], ["qSeven", "0"], ["qEight", "0"], ["qNine", "0"], ["qTen", "0"]]
+        arrayOfPlayer = [String]()
+        arrayOfScore = [String]()
+        saveToUserDefaults()
+        print("userBeginLogout Did It!")
+    }
+    
     func updateToFireBase(){
         var totalScore = 0
         
@@ -90,13 +107,14 @@ class DataManager{
         //Define DB in Firebase
         let LeaderboardDB = Database.database().reference().child("Leaderboard")
         //Set the data
-        let LeaderboardData = ["Email": email, "Username": userName, "TotalScore": totalScore] as [String : Any]
-        
+        print(userName, " - ", totalScore)
+        let LeaderboardData = ["Username": userName, "TotalScore": String(totalScore)]
+            
         //Add Condition if already logged in will run "update" method
         if initialized{
             LeaderboardDB.child(userName).updateChildValues(LeaderboardData)
             print("updateToFirebase Did It!")
-
+                
             //if didn't logged in will run create data
         }else{
             LeaderboardDB.childByAutoId().setValue(LeaderboardData){
@@ -108,11 +126,33 @@ class DataManager{
                 }
             }
         }
+        
+        
 
     }
     
-    func loadFromFirebase() {
-        
+    func retrieveFromFirebase() {
+        let LeaderboardDB = Database.database().reference().child("Leaderboard")
+        var username = ""
+        var totalscore = ""
+        //Closure
+        LeaderboardDB.observe(.value) { (snapshot) in
+            print(snapshot)
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                for snap in snapshot{
+                    if let userData = snap.value as? Dictionary<String, String>{
+                        totalscore = userData["TotalScore"] ?? ""
+                        username = userData["Username"] ?? ""
+                        
+                        self.arrayOfPlayer.append(username)
+                        self.arrayOfScore.append((totalscore))
+                    }
+                }
+            }
+            
+            print(self.arrayOfPlayer)
+            print(self.arrayOfScore)
+        }
     }
     
 }

@@ -9,13 +9,15 @@
 import UIKit
 import Firebase
 
-class MathViewController: CustomClassSetting {
+class MathViewController: CustomClassSetting, UITextFieldDelegate {
     
     //Declare the question array
     var questionArray : [[String]] = DataManager.shared.userHistory
     //Declare the answer
     let answerArray : [Int] = [1,2,3,4,5,6,7,8,9,10]
-
+    
+    @IBOutlet weak var questionNumber: UILabel!
+    
     var questionNow : Int = 0
     var tryAnswer : Int = 1
     
@@ -38,8 +40,17 @@ class MathViewController: CustomClassSetting {
         answerTF.layer.borderColor = UIColor.white.cgColor
         answerTF.layer.borderWidth = 2
         
+        questionView.layer.cornerRadius = 20
+        questionView.layer.shadowRadius = 20
+        
+        
         showQuestion()
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        answerTF.resignFirstResponder()
+        return true
     }
     
     //MARK:- Show Question

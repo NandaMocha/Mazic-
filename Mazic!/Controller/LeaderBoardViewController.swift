@@ -9,11 +9,21 @@
 import UIKit
 
 class LeaderBoardViewController: CustomClassSetting {
-
+    @IBOutlet weak var nameOne: UILabel!
+    @IBOutlet weak var nameTwo: UILabel!
+    
+    @IBOutlet weak var nameThree: UILabel!
+    @IBOutlet weak var scoreOne: UILabel!
+    @IBOutlet weak var scoreTwo: UILabel!
+    @IBOutlet weak var scoreThree: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
 
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        DataManager.shared.retrieveFromFirebase()
     }
 
 }

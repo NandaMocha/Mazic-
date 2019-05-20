@@ -27,8 +27,8 @@ class ProfileViewController: CustomClassSetting {
         let alert = UIAlertController(title: "Peringatan", message: "Apakah anda yakin untuk Keluar?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Tidak", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Keluar", style: .destructive, handler: { (done) in
-            DataManager.shared.initialized = false
-            DataManager.shared.saveToUserDefaults()
+            DataManager.shared.userBeginLogout()
+            print(DataManager.shared.initialized)
             self.performSegue(withIdentifier: "unwindToHome", sender: self)
         }))
         self.present(alert, animated: true, completion: nil)

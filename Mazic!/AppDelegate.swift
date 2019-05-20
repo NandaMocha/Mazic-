@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         DataManager.shared.loadFromUserDefaults()
+        
         print("Location User Defaults -> ", NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true) as [AnyObject])
         
         return true
