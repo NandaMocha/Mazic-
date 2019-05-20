@@ -12,11 +12,10 @@ class HomeViewController: CustomClassSetting {
 
     @IBOutlet weak var profile: UIButton!
     
+    var target : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        DataManager.shared.loadFromUserDefaults()
-        
 
     }
     @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
@@ -42,10 +41,16 @@ class HomeViewController: CustomClassSetting {
     }
     
     @IBAction func leaderBoard(_ sender: Any) {
-        performSegue(withIdentifier: "leaderBoard", sender: self)
+        target = "LeaderBoard"
+        if DataManager.shared.initialized == true{
+            performSegue(withIdentifier: "keLeaderBoardLangsung", sender: self)
+        }else{
+            performSegue(withIdentifier: "loginDulu", sender: self)
+        }
     }
     
     @IBAction func profileButton(_ sender: Any) {
+        target = "Profil"
         if DataManager.shared.initialized == true{
             performSegue(withIdentifier: "keProfileLangsung", sender: self)
         }else{

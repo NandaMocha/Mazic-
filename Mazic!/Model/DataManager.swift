@@ -19,7 +19,6 @@ class DataManager{
     var email : String = ""
     var password : String = ""
     var userHighScore : Int = 0
-    var allUserPoint : [String] = []
     var authResults : String = ""
     var userHistory : [[String]] = [["qOne", "0"], ["qTwo", "0"], ["qThree", "0"], ["qFour", "0"], ["qFive","0"], ["qSix", "0"], ["qSeven", "0"], ["qEight", "0"], ["qNine", "0"], ["qTen", "0"]]
     
@@ -32,8 +31,9 @@ class DataManager{
         defaults.set(email, forKey: "email")
         defaults.set(password, forKey: "password")
         defaults.set(userHighScore, forKey: "userHighScore")
-        defaults.set(allUserPoint, forKey: "allUserPoint")
+        defaults.set(userHistory, forKey: "userHistory")
         defaults.synchronize()
+        print("saveToUserDefault Did It!")
     }
     
     func loadFromUserDefaults() {
@@ -43,9 +43,10 @@ class DataManager{
         email = defaults.string(forKey: "email") ?? "Me"
         password = defaults.string(forKey: "password") ?? "Me"
         userHighScore = defaults.integer(forKey: "userHighScore")
-        if let arrays = defaults.array(forKey: "allUserPoint") {
-            allUserPoint = arrays as! [String]
+        if let arrays = defaults.array(forKey: "userHistory") {
+            userHistory = arrays as! [[String]]
         }
+        print("loadFromUserDefault Did It!")
     }
     
     func userBeginRegister() -> Bool{
@@ -57,7 +58,7 @@ class DataManager{
             }else{
                 print(authResult)
                 errors = false
-                print("Registration Success")
+                print("userBeginRegister Did It! -> Registration Success")
             }
         }
         return errors
@@ -71,15 +72,43 @@ class DataManager{
                 errors = true
             }else{
                 print(authResult)
-                print("Login Success")
+                print("userBeginLogin Did It! -> Login Success")
                 errors = false
             }
         }
         return errors
     }
     
-    func updateToFireBase() {
+    func updateToFireBase(){
+        var totalScore = 0
         
+        //Method to count totalScore
+        for i in 0 ... 9{
+            totalScore += Int(userHistory[i][1]) ?? 0
+        }
+        
+        //Define DB in Firebase
+        let LeaderboardDB = Database.database().reference().child("Leaderboard")
+        //Set the data
+        let LeaderboardData = ["Email": email, "Username": userName, "TotalScore": totalScore] as [String : Any]
+        
+        //Add Condition if already logged in will run "update" method
+        if initialized{
+            LeaderboardDB.child(userName).updateChildValues(LeaderboardData)
+            print("updateToFirebase Did It!")
+
+            //if didn't logged in will run create data
+        }else{
+            LeaderboardDB.childByAutoId().setValue(LeaderboardData){
+                (error, reference) in
+                if let errorGet = error{
+                    print(errorGet)
+                }else{
+                    print("updateToFirebase Did It!")
+                }
+            }
+        }
+
     }
     
     func loadFromFirebase() {

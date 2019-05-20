@@ -57,7 +57,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Lhv-JX-rBT"/>
                     <connections>
-                        <segue destination="RXZ-6r-YFK" kind="show" identifier="leaderBoard" id="aDI-Ob-omA"/>
+                        <segue destination="RXZ-6r-YFK" kind="show" identifier="keLeaderBoardLangsung" id="aDI-Ob-omA"/>
                         <segue destination="oPx-Vq-gik" kind="show" identifier="loginDulu" id="fqf-BD-dmZ"/>
                         <segue destination="QgH-Te-4xR" kind="show" identifier="letsPlay" id="Q1z-Wh-85X"/>
                         <segue destination="eZz-bl-wCg" kind="show" identifier="keProfileLangsung" id="Kdv-Bx-4fh"/>
@@ -228,6 +228,7 @@
                         <outlet property="passwordTF" destination="QaZ-Dp-sKG" id="TP9-OP-Sdr"/>
                         <outlet property="usernameTF" destination="yM2-1d-QWx" id="idx-7q-x9Y"/>
                         <segue destination="eZz-bl-wCg" kind="show" identifier="keProfil" id="Jfz-iU-llV"/>
+                        <segue destination="RXZ-6r-YFK" kind="show" identifier="keLeaderBoard" id="Hl4-Pv-ul5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0p8-s0-KWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,6 +277,9 @@
                                 <state key="normal" title="Check">
                                     <color key="titleColor" red="0.95822542909999997" green="0.72237998250000002" blue="0.30183753369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkButton:" destination="QgH-Te-4xR" eventType="touchUpInside" id="9j8-sR-WhR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -316,6 +320,7 @@
         <image name="Groupprofil" width="825" height="825"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Hl4-Pv-ul5"/>
         <segue reference="Jfz-iU-llV"/>
     </inferredMetricsTieBreakers>
 </document>

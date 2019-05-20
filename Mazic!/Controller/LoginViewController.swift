@@ -15,6 +15,13 @@ class LoginViewController: CustomClassSetting, UITextFieldDelegate {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    
+    var destination: String?{
+        didSet{
+            print("Destinasi After Login: ", destination ?? "No Destination")
+        }
+    }
+    
     var count = 0
 
     override func viewDidLoad() {
@@ -61,6 +68,7 @@ class LoginViewController: CustomClassSetting, UITextFieldDelegate {
     }
     
     func animateWhenNil(textField: UITextField){
+
         UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseInOut, animations: {
             textField.layer.borderColor = UIColor.red.cgColor
             textField.center.x += 5
@@ -92,7 +100,7 @@ class LoginViewController: CustomClassSetting, UITextFieldDelegate {
             DataManager.shared.email = emailTF.text!
             DataManager.shared.password = passwordTF.text!
             
-            //Jika register sukses lansgung menjalankan fingsi login
+            //Jika register sukses lansgung menjalankan fungsi login
             if DataManager.shared.userBeginRegister() == false{
                 
                 if DataManager.shared.userBeginLogin() == false{
