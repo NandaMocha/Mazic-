@@ -17,20 +17,24 @@ class ProfileViewController: CustomClassSetting {
         super.viewDidLoad()
         let name = DataManager.shared.userName
         let highScore = String(DataManager.shared.userHighScore)
+        
         greet.text = "\(name)"
-        totalScore.text = "High Score : \(highScore)"
+        totalScore.text = "Best : \(highScore)"
 
 
     }
 
     @IBAction func logOutButton(_ sender: Any) {
-        let alert = UIAlertController(title: "Peringatan", message: "Apakah anda yakin untuk Keluar?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Tidak", style: .default, handler: nil))
+        let alert = UIAlertController(title: "Warning", message: "Are you seure?", preferredStyle: .alert)
+        
         alert.addAction(UIAlertAction(title: "Keluar", style: .destructive, handler: { (done) in
+            
             DataManager.shared.userBeginLogout()
             print(DataManager.shared.initialized)
+            
             self.performSegue(withIdentifier: "unwindToHome", sender: self)
         }))
+        alert.addAction(UIAlertAction(title: "Tidak", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     

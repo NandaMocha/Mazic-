@@ -16,6 +16,14 @@ class HomeViewController: CustomClassSetting {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        DataManager.shared.retrieveFromFirebase()
+        DataManager.shared.loadFromUserDefaults()
+        DataManager.shared.retrieveDataFromFirebase { (data) in
+            let result = data.sorted(by: { $0.point > $1.point })
+            DataManager.shared.data = result
+//            let rank = result[0]
+//            print(rank.name)
+        }
 
     }
     @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
@@ -23,7 +31,6 @@ class HomeViewController: CustomClassSetting {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }

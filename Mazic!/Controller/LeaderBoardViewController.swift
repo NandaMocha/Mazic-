@@ -11,19 +11,31 @@ import UIKit
 class LeaderBoardViewController: CustomClassSetting {
     @IBOutlet weak var nameOne: UILabel!
     @IBOutlet weak var nameTwo: UILabel!
-    
     @IBOutlet weak var nameThree: UILabel!
-    @IBOutlet weak var scoreOne: UILabel!
-    @IBOutlet weak var scoreTwo: UILabel!
-    @IBOutlet weak var scoreThree: UILabel!
+    
+    var arrayOfPlayer = Array<String>()
+    var arrayOfScore = Array<Int>()
+    var tempArray = Array<Int>()
+    var tempHigh = 0
+    var tempB = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bestPlayer()
         
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        DataManager.shared.retrieveFromFirebase()
+    
+    //Method for counting the best score
+    func bestPlayer(){
+        let dataUser = DataManager.shared.data
+        nameOne.text = dataUser[0].name
+        nameTwo.text = dataUser[1].name
+        nameThree.text = dataUser[2].name
     }
 
+}
+
+struct Ranking {
+    var name:String?
+    var point:Int
 }

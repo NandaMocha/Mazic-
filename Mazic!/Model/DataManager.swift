@@ -21,8 +21,9 @@ class DataManager{
     var userHighScore : Int = 0
     var authResults : String = ""
     var userHistory : [[String]] = [["qOne", "0"], ["qTwo", "0"], ["qThree", "0"], ["qFour", "0"], ["qFive","0"], ["qSix", "0"], ["qSeven", "0"], ["qEight", "0"], ["qNine", "0"], ["qTen", "0"]]
-    var arrayOfPlayer = [String]()
-    var arrayOfScore = [String]()
+    var arrayOfPlayer = ["",""]
+    var arrayOfScore = ["",""]
+    var data:[Ranking] = []
     
     
     private init(){}
@@ -35,6 +36,8 @@ class DataManager{
         defaults.set(password, forKey: "password")
         defaults.set(userHighScore, forKey: "userHighScore")
         defaults.set(userHistory, forKey: "userHistory")
+        defaults.set(arrayOfPlayer, forKey: "arrayOfPlayer")
+        defaults.set(arrayOfScore, forKey: "arrayOfScore")
         defaults.synchronize()
         print("saveToUserDefault Did It!")
     }
@@ -48,6 +51,12 @@ class DataManager{
         userHighScore = defaults.integer(forKey: "userHighScore")
         if let arrays = defaults.array(forKey: "userHistory") {
             userHistory = arrays as! [[String]]
+        }
+        if let arrays = defaults.array(forKey: "arrayOfScore"){
+            arrayOfScore = arrays as! [String]
+        }
+        if let arrays = defaults.array(forKey: "arrayOfPlayer"){
+            arrayOfPlayer = arrays as! [String]
         }
         print("loadFromUserDefault Did It!")
     }
@@ -135,10 +144,12 @@ class DataManager{
         let LeaderboardDB = Database.database().reference().child("Leaderboard")
         var username = ""
         var totalscore = ""
+//        print("Cek retrieve")
         //Closure
         LeaderboardDB.observe(.value) { (snapshot) in
-            print(snapshot)
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                self.arrayOfPlayer.removeAll()
+                self.arrayOfScore.removeAll()
                 for snap in snapshot{
                     if let userData = snap.value as? Dictionary<String, String>{
                         totalscore = userData["TotalScore"] ?? ""
@@ -146,12 +157,42 @@ class DataManager{
                         
                         self.arrayOfPlayer.append(username)
                         self.arrayOfScore.append((totalscore))
+                        
+//                        print("ArrayOfPlayer, ",self.arrayOfPlayer)
+                        self.saveToUserDefaults()
                     }
                 }
             }
-            
-            print(self.arrayOfPlayer)
-            print(self.arrayOfScore)
+        }
+    }
+    
+    func retrieveDataFromFirebase(completion: @escaping ([Ranking]) -> Void) {
+        let LeaderboardDB = Database.database().reference().child("Leaderboard")
+        var username = ""
+        var totalscore = ""
+        print("Cek retrieve")
+        //Closure
+        LeaderboardDB.observe(.value) { (snapshot) in
+            //            print("Data Snapshot, ", snapshot)
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                self.arrayOfPlayer.removeAll()
+                self.arrayOfScore.removeAll()
+                for snap in snapshot{
+                    if let userData = snap.value as? Dictionary<String, String>{
+                        totalscore = userData["TotalScore"] ?? ""
+                        username = userData["Username"] ?? ""
+                        
+                        self.arrayOfPlayer.append(username)
+                        self.arrayOfScore.append((totalscore))
+                        
+                        print("ArrayOfPlayer, ",self.arrayOfPlayer)
+                        self.saveToUserDefaults()
+                        let rank = Ranking.init(name: username, point: Int(totalscore)!)
+                        self.data.append(rank)
+                    }
+                }
+            }
+            completion(self.data)
         }
     }
     

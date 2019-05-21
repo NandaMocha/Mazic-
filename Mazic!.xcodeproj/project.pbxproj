@@ -15,7 +15,6 @@
 		041C5844228C47780071F2B0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5843228C47780071F2B0 /* GameScene.swift */; };
 		041C5846228C47780071F2B0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5845228C47780071F2B0 /* GameViewController.swift */; };
 		041C5849228C47780071F2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C5847228C47780071F2B0 /* Main.storyboard */; };
-		041C584B228C47780071F2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C584A228C47780071F2B0 /* Assets.xcassets */; };
 		041C584E228C47780071F2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041C584C228C47780071F2B0 /* LaunchScreen.storyboard */; };
 		041C5859228C47780071F2B0 /* Mazic_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5858228C47780071F2B0 /* Mazic_Tests.swift */; };
 		041C5864228C47780071F2B0 /* Mazic_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C5863228C47780071F2B0 /* Mazic_UITests.swift */; };
@@ -26,6 +25,7 @@
 		04713B6722904F6D009BDEC3 /* CustomClassSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6622904F6D009BDEC3 /* CustomClassSetting.swift */; };
 		04713B6A22905B2D009BDEC3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04713B6922905B2D009BDEC3 /* DataManager.swift */; };
 		0477DA8322924A420023F499 /* LeaderBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477DA8222924A420023F499 /* LeaderBoardModel.swift */; };
+		04C1C9B822942430005D731F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C9B72294242F005D731F /* Assets.xcassets */; };
 		BCE2E3BFD87E9151340148F4 /* Pods_Mazic_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875B232A13A87301ADE7A384 /* Pods_Mazic_.framework */; };
 		D3296433F55329BB937A3FE9 /* Pods_Mazic_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82448CDE93748BE5424D92A /* Pods_Mazic_Tests.framework */; };
 		D636123BB9BFBBA99ECCB094 /* Pods_Mazic_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1F7CB969AACDF9D1F9B56F /* Pods_Mazic_UITests.framework */; };
@@ -59,7 +59,6 @@
 		041C5843228C47780071F2B0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		041C5845228C47780071F2B0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		041C5848228C47780071F2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		041C584A228C47780071F2B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041C584D228C47780071F2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041C584F228C47780071F2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041C5854228C47780071F2B0 /* Mazic!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mazic!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +74,7 @@
 		04713B6622904F6D009BDEC3 /* CustomClassSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClassSetting.swift; sourceTree = "<group>"; };
 		04713B6922905B2D009BDEC3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0477DA8222924A420023F499 /* LeaderBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardModel.swift; sourceTree = "<group>"; };
+		04C1C9B72294242F005D731F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19B477E723D6DA89DCAF822F /* Pods-Mazic!Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!Tests.release.xcconfig"; path = "Target Support Files/Pods-Mazic!Tests/Pods-Mazic!Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1A1F7CB969AACDF9D1F9B56F /* Pods_Mazic_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mazic_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD7A530BB03A289A5BCF6B8 /* Pods-Mazic!UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mazic!UITests.debug.xcconfig"; path = "Target Support Files/Pods-Mazic!UITests/Pods-Mazic!UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,9 +129,9 @@
 		0401491D228FF335005AA464 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04C1C9B72294242F005D731F /* Assets.xcassets */,
 				041C584C228C47780071F2B0 /* LaunchScreen.storyboard */,
 				041C5847228C47780071F2B0 /* Main.storyboard */,
-				041C584A228C47780071F2B0 /* Assets.xcassets */,
 				04713B5E22903B0D009BDEC3 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
@@ -343,9 +343,9 @@
 			files = (
 				041C5849228C47780071F2B0 /* Main.storyboard in Resources */,
 				041C5840228C47770071F2B0 /* GameScene.sks in Resources */,
-				041C584B228C47780071F2B0 /* Assets.xcassets in Resources */,
 				041C584E228C47780071F2B0 /* LaunchScreen.storyboard in Resources */,
 				041C5842228C47770071F2B0 /* Actions.sks in Resources */,
+				04C1C9B822942430005D731F /* Assets.xcassets in Resources */,
 				04713B5F22903B0D009BDEC3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

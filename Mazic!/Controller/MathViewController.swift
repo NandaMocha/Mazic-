@@ -33,15 +33,9 @@ class MathViewController: CustomClassSetting, UITextFieldDelegate {
         print(questionArray)
 
         checkButton.layer.cornerRadius = (checkButton.frame.height)/2
-        checkButton.layer.borderColor = UIColor.white.cgColor
-        checkButton.layer.borderWidth = 2
-        
-        answerTF.layer.cornerRadius = (answerTF.frame.height)/2
-        answerTF.layer.borderColor = UIColor.white.cgColor
-        answerTF.layer.borderWidth = 2
-        
-        questionView.layer.cornerRadius = 20
-        questionView.layer.shadowRadius = 20
+        checkButton.contentMode = .center
+        checkButton.imageView?.contentMode = .scaleAspectFit
+        checkButton.setImage(UIImage(named: "checkButtonAll"), for: .normal)
         
         
         showQuestion()
@@ -60,6 +54,7 @@ class MathViewController: CustomClassSetting, UITextFieldDelegate {
             if Int(questionArray[i][1]) == 0{
                 print("Cek Question \(questionArray)")
                 questionNow = i
+                questionNumber.text = "\(i+1)/10"
                 questionView.image = UIImage(named: "\(questionArray[i][0])")
                 break
             }
@@ -101,16 +96,11 @@ class MathViewController: CustomClassSetting, UITextFieldDelegate {
                 tryAnswer += 1
                 animateWhenWrong(textField: answerTF)
                 answerTF.text = ""
-                
-                print("Wrong")
+                answerTF.becomeFirstResponder()
             }
         }else{
-            let alert = UIAlertController(title: "Warning", message: "Fill the answer!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            
             animateWhenWrong(textField: answerTF)
-
+            answerTF.becomeFirstResponder()
         }
     }
     
@@ -118,7 +108,7 @@ class MathViewController: CustomClassSetting, UITextFieldDelegate {
     func animateWhenWrong(textField: UITextField){
         
         UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseInOut, animations: {
-            textField.layer.borderColor = UIColor.red.cgColor
+            textField.background = UIImage(named: "answerTFWrong")
             textField.center.x += 5
             
         }) { (done) in
@@ -128,22 +118,22 @@ class MathViewController: CustomClassSetting, UITextFieldDelegate {
                 self.count += 1
             } else{
                 self.count = 0
-                textField.layer.borderColor = UIColor.white.cgColor
+                textField.background = UIImage(named: "answerTF")
             }
         }
     }
     
     func animateWhenTrue(textField: UITextField){
         
-        UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseInOut, animations: {
-            textField.layer.borderColor = UIColor.green.cgColor
-            
+        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
+            textField.background = UIImage(named: "answerTFTrue")
+
         }) { (done) in
             self.answerTF.text = ""
             self.tryAnswer = 1
             self.showQuestion()
             print("Reload True")
-            textField.layer.borderColor = UIColor.white.cgColor
+            textField.background = UIImage(named: "answerTF")
         }
     }
     
@@ -157,10 +147,7 @@ class MathViewController: CustomClassSetting, UITextFieldDelegate {
             DataManager.shared.updateToFireBase()
         }
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        DataManager.shared.loadFromUserDefaults()
-    }
+
     
     
     
