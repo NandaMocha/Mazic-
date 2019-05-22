@@ -16,14 +16,16 @@ class HomeViewController: CustomClassSetting {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DataManager.shared.retrieveFromFirebase()
+//        DataManager.shared.retrieveFromFirebase()
         DataManager.shared.loadFromUserDefaults()
         DataManager.shared.retrieveDataFromFirebase { (data) in
             let result = data.sorted(by: { $0.point > $1.point })
             DataManager.shared.data = result
+            print(result)
 //            let rank = result[0]
 //            print(rank.name)
         }
+        DataManager.shared.saveToUserDefaults()
 
     }
     @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }

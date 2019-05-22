@@ -19,6 +19,7 @@ class CustomClassSetting: UIViewController{
         let color = [UIColor.flatOrange, UIColor.flatYellow]
         view?.backgroundColor = UIColor(gradientStyle:UIGradientStyle.topToBottom, withFrame:view!.frame, andColors: color)
         
+        
         guard let navBar = navigationController?.navigationBar else{ fatalError("Nav Controller does not exist") }
         
         

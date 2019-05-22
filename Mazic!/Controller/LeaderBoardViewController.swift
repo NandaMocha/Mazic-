@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LeaderBoardViewController: CustomClassSetting {
+class LeaderBoardViewController: UIViewController {
     @IBOutlet weak var nameOne: UILabel!
     @IBOutlet weak var nameTwo: UILabel!
     @IBOutlet weak var nameThree: UILabel!

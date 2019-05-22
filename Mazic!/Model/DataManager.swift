@@ -140,31 +140,31 @@ class DataManager{
 
     }
     
-    func retrieveFromFirebase() {
-        let LeaderboardDB = Database.database().reference().child("Leaderboard")
-        var username = ""
-        var totalscore = ""
-//        print("Cek retrieve")
-        //Closure
-        LeaderboardDB.observe(.value) { (snapshot) in
-            if let snapshot = snapshot.children.allObjects as? [DataSnapshot]{
-                self.arrayOfPlayer.removeAll()
-                self.arrayOfScore.removeAll()
-                for snap in snapshot{
-                    if let userData = snap.value as? Dictionary<String, String>{
-                        totalscore = userData["TotalScore"] ?? ""
-                        username = userData["Username"] ?? ""
-                        
-                        self.arrayOfPlayer.append(username)
-                        self.arrayOfScore.append((totalscore))
-                        
-//                        print("ArrayOfPlayer, ",self.arrayOfPlayer)
-                        self.saveToUserDefaults()
-                    }
-                }
-            }
-        }
-    }
+//    func retrieveFromFirebase() {
+//        let LeaderboardDB = Database.database().reference().child("Leaderboard")
+//        var username = ""
+//        var totalscore = ""
+////        print("Cek retrieve")
+//        //Closure
+//        LeaderboardDB.observe(.value) { (snapshot) in
+//            if let snapshot = snapshot.children.allObjects as? [DataSnapshot]{
+//                self.arrayOfPlayer.removeAll()
+//                self.arrayOfScore.removeAll()
+//                for snap in snapshot{
+//                    if let userData = snap.value as? Dictionary<String, String>{
+//                        totalscore = userData["TotalScore"] ?? ""
+//                        username = userData["Username"] ?? ""
+//
+//                        self.arrayOfPlayer.append(username)
+//                        self.arrayOfScore.append((totalscore))
+//
+////                        print("ArrayOfPlayer, ",self.arrayOfPlayer)
+//                        self.saveToUserDefaults()
+//                    }
+//                }
+//            }
+//        }
+//    }
     
     func retrieveDataFromFirebase(completion: @escaping ([Ranking]) -> Void) {
         let LeaderboardDB = Database.database().reference().child("Leaderboard")
